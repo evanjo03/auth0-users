@@ -4,7 +4,7 @@ import { fileURLToPath } from "url";
 import * as dotenv from "dotenv";
 
 const __filename = fileURLToPath(import.meta.url);
-const fullPath = path.resolve(path.dirname(__filename), "../../../");
+const fullPath = path.resolve(path.dirname(__filename), "../../");
 dotenv.config({ path: fullPath + "/.env" });
 
 export async function getManagementClient(): Promise<ManagementClient> {
